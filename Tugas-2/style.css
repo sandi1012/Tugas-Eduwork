@@ -1,0 +1,260 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+} /* ========================= NAVBAR ========================= */
+.navbar {
+  background-color: #2563eb;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar h2 {
+  font-size: 24px;
+}
+.nav {
+  display: flex;
+  gap: 30px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav a:hover {
+  color: #bfdbfe;
+} /* ========================= HOME/ SECTION 2 ========================= */
+.home {
+  width: 84%;
+  max-width: 1200px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.subtitle {
+  color: #2563eb;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.home h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+.home-text p {
+  margin-bottom: 20px;
+}
+.home button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.home button:hover {
+  background-color: #1d4ed8;
+}
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+}
+.home-image img {
+  width: 100%;
+  max-width: 320px;
+  height: 350px;
+  object-fit: cover; /* Agar foto tidak gepeng */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+} /* ========================= SECTION TITLE ========================= */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-title h2 {
+  font-size: 32px;
+  color: #0f172a;
+}
+.section-title p {
+  color: #64748b;
+} /* ========================= BIODATA ========================= */
+.biodata {
+  padding: 70px 8%;
+  background-color: #e0f2fe;
+}
+.biodata-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.biodata-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.biodata-card:hover {
+  transform: translateY(-5px);
+}
+.biodata-card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+.biodata-card p {
+  color: #475569;
+} /* ========================= PORTFOLIO ========================= */
+.portfolio {
+  padding: 70px 8%;
+}
+.portfolio-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;
+}
+.portfolio-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-card:hover {
+  transform: translateY(-8px);
+}
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  background-color: #f8fafc;
+  display: block;
+  margin: 0 auto;
+}
+.portfolio-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+.portfolio-content h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.portfolio-content p {
+  color: #64748b;
+} /* ========================= FOOTER ========================= */
+footer {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+} /* ========================= TABLET max-width: 768px ========================= */
+@media (max-width: 768px) {
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  .menu {
+    gap: 20px;
+  } /* HERO */
+  .home {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 35px;
+    margin: 40px auto;
+  }
+  .home h1 {
+    font-size: 34px;
+  }
+  .home-image {
+    order: -1;
+  } /* BIODATA */
+  .biodata-grid {
+    grid-template-columns: repeat(2, 1fr);
+  } /* PORTFOLIO */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} /* ========================= MOBILE max-width: 480px ========================= */
+@media (max-width: 480px) {
+  /* NAVBAR */
+  .navbar {
+    padding: 15px;
+  }
+  .navbar h2 {
+    font-size: 20px;
+  }
+  .menu {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .menu a {
+    font-size: 14px;
+  } /* HERO */
+  .home {
+    width: 92%;
+    padding: 25px;
+    margin: 25px auto;
+    gap: 25px;
+    border-radius: 15px;
+  }
+  .home h1 {
+    font-size: 28px;
+  }
+  .home-text p {
+    font-size: 15px;
+  }
+  .home-image img {
+    width: 220px;
+  } /* SECTION TITLE */
+  .section-title h2 {
+    font-size: 27px;
+  } /* BIODATA */
+  .biodata {
+    padding: 50px 5%;
+  }
+  .biodata-grid {
+    grid-template-columns: 1fr;
+  } /* PORTFOLIO */
+  .portfolio {
+    padding: 50px 5%;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-card img {
+    height: 220px;
+  } /* FOOTER */
+  footer {
+    font-size: 14px;
+  }
+}
