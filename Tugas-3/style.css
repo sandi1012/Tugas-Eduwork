@@ -1,0 +1,446 @@
+/* =================================
+   DASAR
+================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fa;
+  color: #1e293b;
+}
+
+/* =================================
+   NAVBAR
+================================= */
+
+.custom-navbar {
+  background-color: #0b1f33;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #dce7f0 !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #14b8a6 !important;
+}
+
+/* =================================
+   HOME
+================================= */
+
+.home-section {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 0;
+
+  background-color: #f4f7fa;
+}
+
+.home-subtitle {
+  color: #14b8a6;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.home-section h1 {
+  color: #0b1f33;
+}
+
+.home-title {
+  color: #12304a;
+
+  font-size: 24px;
+
+  margin-bottom: 20px;
+}
+
+.home-description {
+  color: #64748b;
+
+  max-width: 550px;
+
+  margin-bottom: 30px;
+}
+
+/* =================================
+   FOTO PROFIL
+================================= */
+
+.profile-image {
+  width: 320px;
+  height: 320px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 8px solid #0b1f33;
+
+  box-shadow: 0 15px 35px rgba(11, 31, 51, 0.2);
+}
+
+/* =================================
+   BUTTON
+================================= */
+
+.custom-btn {
+  background-color: #0b1f33;
+
+  color: #ffffff;
+
+  padding: 12px 25px;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: #14b8a6;
+
+  color: #ffffff;
+}
+
+/* =================================
+   SECTION
+================================= */
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-heading {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.section-heading h2 {
+  color: #0b1f33;
+
+  font-size: 34px;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  color: #64748b;
+}
+
+/* =================================
+   ABOUT
+================================= */
+
+.about-section {
+  background-color: #ffffff;
+}
+
+.info-card {
+  background-color: #f4f7fa;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  border-left: 5px solid #14b8a6;
+
+  height: 100%;
+
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 25px rgba(11, 31, 51, 0.1);
+}
+
+.info-card h3 {
+  color: #0b1f33;
+
+  font-size: 20px;
+
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  color: #64748b;
+
+  margin-bottom: 0;
+}
+
+/* =================================
+   SKILL
+================================= */
+
+.skill-card {
+  background-color: #ffffff;
+
+  padding: 30px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  height: 100%;
+
+  box-shadow: 0 5px 15px rgba(11, 31, 51, 0.08);
+
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 30px rgba(11, 31, 51, 0.12);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #0b1f33;
+
+  color: #ffffff;
+
+  border-radius: 12px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.skill-card:hover .skill-icon {
+  background-color: #14b8a6;
+}
+
+.skill-card h3 {
+  color: #0b1f33;
+
+  font-size: 20px;
+}
+
+.skill-card p {
+  color: #64748b;
+
+  margin-bottom: 0;
+}
+
+/* =================================
+   PORTFOLIO
+================================= */
+
+.portfolio-section {
+  background-color: #eaf0f5;
+}
+
+.portfolio-card {
+  background-color: #ffffff;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  height: 100%;
+
+  box-shadow: 0 5px 15px rgba(11, 31, 51, 0.08);
+
+  transition: 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 30px rgba(11, 31, 51, 0.12);
+}
+
+.portfolio-card img {
+  width: 100%;
+
+  height: 210px;
+
+  object-fit: cover;
+}
+
+.portfolio-content {
+  padding: 25px;
+}
+
+.portfolio-content h3 {
+  color: #0b1f33;
+
+  font-size: 21px;
+
+  margin-bottom: 10px;
+}
+
+.portfolio-content p {
+  color: #64748b;
+
+  margin-bottom: 20px;
+}
+
+.portfolio-link {
+  color: #0f9f91;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.portfolio-link:hover {
+  color: #0b1f33;
+
+  text-decoration: underline;
+}
+
+/* =================================
+   CONTACT
+================================= */
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-content p {
+  color: #64748b;
+
+  margin-bottom: 25px;
+}
+
+.contact-links {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: #0b1f33;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  color: #14b8a6;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.custom-footer {
+  background-color: #0b1f33;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  padding: 40px 0;
+}
+
+.custom-footer h3 {
+  margin-bottom: 5px;
+}
+
+.custom-footer p {
+  color: #b8c7d6;
+}
+
+.custom-footer .copyright {
+  font-size: 14px;
+
+  margin-top: 20px;
+
+  margin-bottom: 0;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .home-section {
+    text-align: center;
+
+    padding: 70px 0;
+  }
+
+  .home-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-image {
+    width: 210px;
+    height: 210px;
+  }
+
+  .home-section h1 {
+    font-size: 34px;
+  }
+
+  .home-title {
+    font-size: 20px;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .contact-links {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+}
